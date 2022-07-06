@@ -1,26 +1,29 @@
 package tests;
 
-import org.junit.BeforeClass;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import io.restassured.RestAssured;
-import request.BestBuyRequestPlant;
+import com.aventstack.extentreports.Status;
 
-public class ProductTest {
-	
-	BestBuyRequestPlant bestBuyRequestPlant;
-	
-	@BeforeClass
-	public void setup() {
-		RestAssured.baseURI = "http://localhost";
-		RestAssured.port = 3030;
-		
-		bestBuyRequestPlant = new BestBuyRequestPlant();
+import io.restassured.response.Response;
+
+public class ProductTest extends BaseTest {
+
+	@DataProvider(name = "DataFromExcel")
+	public List<String> dataForTest() {
+		List<String> list = new ArrayList<String>();
+		return list;
 	}
-	
-	@Test
+
+	@Test(dataProvider = "")
 	public void verifyGetRequest() {
-		bestBuyRequestPlant.getAllProducts().then().log().all().statusCode(200);
+		extentReport.createTestcase("Verify Get Product");
+		Response response =  bestBuyRequestPlant.getAllProducts("/products", "", 0);
+		extentReport.addLog(Status.INFO, response.asPrettyString());
+		response.then().statusCode(200);
 	}
 
 }

@@ -10,6 +10,9 @@ public class RestClient {
 	public Response SendGetRequest(String uri) {
 		return given().when().get(uri);
 	}
+	public Response SendGetRequest(String uri,String query,int limit) {
+		return given().when().queryParam(query, limit).get(uri);
+	}
 	
 	public Response SendPostRequest(String uri, Object requestPayload) {
 		return given().contentType(ContentType.JSON).when().body(requestPayload).post(uri);

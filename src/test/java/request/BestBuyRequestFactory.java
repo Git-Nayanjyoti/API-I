@@ -3,16 +3,20 @@ package request;
 import client.RestClient;
 import io.restassured.response.Response;
 
-public class BestBuyRequestPlant {
+public class BestBuyRequestFactory {
 	
 	RestClient restClient;
 	
-	public BestBuyRequestPlant() {
+	public BestBuyRequestFactory() {
 		restClient = new RestClient();
 	}
 	
-	public Response getAllProducts(){
-		return restClient.SendGetRequest("/products");
+	public Response getAllProducts(String str,String query, int limit){
+		if(query == null) {
+			return restClient.SendGetRequest(str);
+		} else {
+			return restClient.SendGetRequest(str,query,limit);
+		}	
 	}
 	
 	public Response addProducts(String requestPayload){
