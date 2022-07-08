@@ -13,8 +13,8 @@ import io.restassured.response.Response;
 public class ProductTest extends BaseTest {
 
 	@DataProvider(name = "DataFromExcel")
-	public List<String> dataForTest() {
-		List<String> list = new ArrayList<String>();
+	public List<String[]> dataForTest() {
+		List<String[]> list = new ArrayList<String[]>();
 		return list;
 	}
 
