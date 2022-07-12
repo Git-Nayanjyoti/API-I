@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\NRABHA\AppData\Local\Temp\testng-eclipse--1547385280\testng-customsuite.xml</span>
+                    <span>C:\Users\NRABHA\AppData\Local\Temp\testng-eclipse--762946261\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,47 +93,57 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">5 methods, 5 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content failed suite-Default_suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="tests.ProductTest" class="method navigator-link" hash-for-method="verifyGetRequest(GET, /products, &quot;content-type&quot;: &quot;application/json; charset=utf-8&quot;, NA, $limit,1, 200.0, data[0].name...)">verifyGetRequest(GET, /products, "content-type": "application/json; charset=utf-8", NA, $limit,1, 200.0, data[0].name...)</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="tests.ProductTest" class="method navigator-link" hash-for-method="validateRequest(POST, /products, &quot;content-type&quot;: &quot;application/json; charset=utf-8&quot;,
+&quot;Content-Encoding&quot;: &quot;gzip&quot;, {
+&quot;n...)">validateRequest(POST, /products, "content-type": "application/json; charset=utf-8",
+"Content-Encoding": "gzip", {
+"n...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="tests.ProductTest" class="method navigator-link" hash-for-method="verifyGetRequest(POST, /products, &quot;content-type&quot;: &quot;application/json; charset=utf-8&quot;, {
-&quot;name&quot;: &quot;iphone&quot;,
-&quot;type&quot;: &quot;Sta...)">verifyGetRequest(POST, /products, "content-type": "application/json; charset=utf-8", {
-"name": "iphone",
-"type": "Sta...)</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="tests.ProductTest" class="method navigator-link" hash-for-method="validateRequest(DELETE, /products, &quot;content-type&quot;: &quot;application/json; charset=utf-8&quot;,
+&quot;Content-Encoding&quot;: &quot;gzip&quot;, {
+...)">validateRequest(DELETE, /products, "content-type": "application/json; charset=utf-8",
+"Content-Encoding": "gzip", {
+...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="tests.ProductTest" class="method navigator-link" hash-for-method="verifyGetRequest(DELETE, /products, &quot;content-type&quot;: &quot;application/json; charset=utf-8&quot;, NA, id,, 200400.0, NA)">verifyGetRequest(DELETE, /products, "content-type": "application/json; charset=utf-8", NA, id,, 200400.0, NA)</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="tests.ProductTest" class="method navigator-link" hash-for-method="validateRequest(PATCH, /products, &quot;content-type&quot;: &quot;application/json; charset=utf-8&quot;,
+&quot;Content-Encoding&quot;: &quot;gzip&quot;, { &quot;...)">validateRequest(PATCH, /products, "content-type": "application/json; charset=utf-8",
+"Content-Encoding": "gzip", { "...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="tests.ProductTest" class="method navigator-link" hash-for-method="verifyGetRequest(PATCH, /products, &quot;content-type&quot;: &quot;application/json; charset=utf-8&quot;, { &quot;name&quot;: &quot;iphone&quot;,
-&quot;type&quot;: &quot;St...)">verifyGetRequest(PATCH, /products, "content-type": "application/json; charset=utf-8", { "name": "iphone",
-"type": "St...)</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="tests.ProductTest" class="method navigator-link" hash-for-method="validateRequest(PUT, /products, &quot;content-type&quot;: &quot;application/json; charset=utf-8&quot;,
+&quot;Content-Encoding&quot;: &quot;gzip&quot;, {
+&quot;na...)">validateRequest(PUT, /products, "content-type": "application/json; charset=utf-8",
+"Content-Encoding": "gzip", {
+"na...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="tests.ProductTest" class="method navigator-link" hash-for-method="verifyGetRequest(Request Type, Request Uri, Request Headers, Request Body, Request Parameters, Expected Status Code, ...)">verifyGetRequest(Request Type, Request Uri, Request Headers, Request Body, Request Parameters, Expected Status Code, ...)</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="tests.ProductTest" class="method navigator-link" hash-for-method="validateRequest(GET, /products, &quot;content-type&quot;: &quot;application/json; charset=utf-8&quot;,
+&quot;Content-Encoding&quot;: &quot;gzip&quot;, NA, $...)">validateRequest(GET, /products, "content-type": "application/json; charset=utf-8",
+"Content-Encoding": "gzip", NA, $...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -145,30 +155,87 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">tests.ProductTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyGetRequest(GET, /products, &quot;content-type&quot;: &quot;application/json; charset=utf-8&quot;, NA, $limit,1, 200.0, data[0].name...)">
-                  </a> <!-- verifyGetRequest(GET, /products, "content-type": "application/json; charset=utf-8", NA, $limit,1, 200.0, data[0].name...) -->
-                  <span class="method-name">verifyGetRequest</span>
-                  <span class="parameters">(GET, /products, "content-type": "application/json; charset=utf-8", NA, $limit,1, 200.0, data[0].name,data[1].name,data[2].name)</span>
+                  <a name="validateRequest(POST, /products, &quot;content-type&quot;: &quot;application/json; charset=utf-8&quot;,
+&quot;Content-Encoding&quot;: &quot;gzip&quot;, {
+&quot;n...)">
+                  </a> <!-- validateRequest(POST, /products, "content-type": "application/json; charset=utf-8",
+"Content-Encoding": "gzip", {
+"n...) -->
+                  <span class="method-name">validateRequest</span>
+                  <span class="parameters">(POST, /products, "content-type": "application/json; charset=utf-8",
+"Content-Encoding": "gzip", {
+"name": "iphone",
+"type": "Smart Phone",
+"price": 1000,
+"shipping": 10,
+"upc": "string",
+"description": "color white, ram 4 gb, processor A12 bionic",
+"manufacturer": "Apple California",
+"model": "iphone 11",
+"url": "string",
+"image": "string"
+}, NA, 201.0, NA)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [null] but found [ &quot;application/json; charset=utf-8&quot;]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at request.RequestMethods.validateHeaders(RequestMethods.java:29)
+	at request.RequestMethods.postProduct(RequestMethods.java:68)
+	at tests.ProductTest.validateRequest(ProductTest.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyGetRequest(POST, /products, &quot;content-type&quot;: &quot;application/json; charset=utf-8&quot;, {
-&quot;name&quot;: &quot;iphone&quot;,
-&quot;type&quot;: &quot;Sta...)">
-                  </a> <!-- verifyGetRequest(POST, /products, "content-type": "application/json; charset=utf-8", {
-"name": "iphone",
-"type": "Sta...) -->
-                  <span class="method-name">verifyGetRequest</span>
-                  <span class="parameters">(POST, /products, "content-type": "application/json; charset=utf-8", {
+                  <a name="validateRequest(DELETE, /products, &quot;content-type&quot;: &quot;application/json; charset=utf-8&quot;,
+&quot;Content-Encoding&quot;: &quot;gzip&quot;, {
+...)">
+                  </a> <!-- validateRequest(DELETE, /products, "content-type": "application/json; charset=utf-8",
+"Content-Encoding": "gzip", {
+...) -->
+                  <span class="method-name">validateRequest</span>
+                  <span class="parameters">(DELETE, /products, "content-type": "application/json; charset=utf-8",
+"Content-Encoding": "gzip", {
 "name": "iphone",
 "type": "Start Phone",
 "price": 1000,
@@ -179,51 +246,212 @@
 "model": "iphone 11",
 "url": "string",
 "image": "string"
-}, NA, 201.0, NA)</span>
+}, id, 200400.0, NA)</span>
+                  <div class="stack-trace">java.lang.ClassCastException: class io.restassured.path.xml.XmlPath cannot be cast to class java.lang.Integer (io.restassured.path.xml.XmlPath is in unnamed module of loader &apos;app&apos;; java.lang.Integer is in module java.base of loader &apos;bootstrap&apos;)
+	at request.RequestMethods.deleteProduct(RequestMethods.java:122)
+	at tests.ProductTest.validateRequest(ProductTest.java:40)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyGetRequest(DELETE, /products, &quot;content-type&quot;: &quot;application/json; charset=utf-8&quot;, NA, id,, 200400.0, NA)">
-                  </a> <!-- verifyGetRequest(DELETE, /products, "content-type": "application/json; charset=utf-8", NA, id,, 200400.0, NA) -->
-                  <span class="method-name">verifyGetRequest</span>
-                  <span class="parameters">(DELETE, /products, "content-type": "application/json; charset=utf-8", NA, id,, 200400.0, NA)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyGetRequest(PATCH, /products, &quot;content-type&quot;: &quot;application/json; charset=utf-8&quot;, { &quot;name&quot;: &quot;iphone&quot;,
-&quot;type&quot;: &quot;St...)">
-                  </a> <!-- verifyGetRequest(PATCH, /products, "content-type": "application/json; charset=utf-8", { "name": "iphone",
-"type": "St...) -->
-                  <span class="method-name">verifyGetRequest</span>
-                  <span class="parameters">(PATCH, /products, "content-type": "application/json; charset=utf-8", { "name": "iphone",
-"type": "Start Phone", 
-"price": 1000,
-"shipping": 10, 
+                  <a name="validateRequest(PATCH, /products, &quot;content-type&quot;: &quot;application/json; charset=utf-8&quot;,
+&quot;Content-Encoding&quot;: &quot;gzip&quot;, { &quot;...)">
+                  </a> <!-- validateRequest(PATCH, /products, "content-type": "application/json; charset=utf-8",
+"Content-Encoding": "gzip", { "...) -->
+                  <span class="method-name">validateRequest</span>
+                  <span class="parameters">(PATCH, /products, "content-type": "application/json; charset=utf-8",
+"Content-Encoding": "gzip", { "name": "iphone",
+"type": "Smart Phone", 
+"price": 1500,
+"shipping": 15, 
 "upc": "string", 
-"description": "color white, ram 4 gb, processor A12 bionic", 
+"description": "color green, ram 8 gb, processor A15 bionic", 
 "manufacturer": "Apple California", 
-"model": "iphone 11", 
+"model": "iphone 13", 
 "url": "string", 
 "image": "string" 
-}, NA, 201.0, NA)</span>
+}, id, 201.0, NA)</span>
+                  <div class="stack-trace">java.lang.ClassCastException: class io.restassured.path.xml.XmlPath cannot be cast to class java.lang.Integer (io.restassured.path.xml.XmlPath is in unnamed module of loader &apos;app&apos;; java.lang.Integer is in module java.base of loader &apos;bootstrap&apos;)
+	at request.RequestMethods.patchProduct(RequestMethods.java:104)
+	at tests.ProductTest.validateRequest(ProductTest.java:37)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyGetRequest(Request Type, Request Uri, Request Headers, Request Body, Request Parameters, Expected Status Code, ...)">
-                  </a> <!-- verifyGetRequest(Request Type, Request Uri, Request Headers, Request Body, Request Parameters, Expected Status Code, ...) -->
-                  <span class="method-name">verifyGetRequest</span>
-                  <span class="parameters">(Request Type, Request Uri, Request Headers, Request Body, Request Parameters, Expected Status Code, Json Path)</span>
+                  <a name="validateRequest(PUT, /products, &quot;content-type&quot;: &quot;application/json; charset=utf-8&quot;,
+&quot;Content-Encoding&quot;: &quot;gzip&quot;, {
+&quot;na...)">
+                  </a> <!-- validateRequest(PUT, /products, "content-type": "application/json; charset=utf-8",
+"Content-Encoding": "gzip", {
+"na...) -->
+                  <span class="method-name">validateRequest</span>
+                  <span class="parameters">(PUT, /products, "content-type": "application/json; charset=utf-8",
+"Content-Encoding": "gzip", {
+"name": "iphone",
+"type": "Smart Phone",
+"price": 1000,
+"shipping": 10,
+"upc": "string",
+"description": "color white, ram 4 gb, processor A12 bionic",
+"manufacturer": "Apple California",
+"model": "iphone 11",
+"url": "string",
+"image": "string"
+}, id, 200.0, NA)</span>
+                  <div class="stack-trace">java.lang.ClassCastException: class io.restassured.path.xml.XmlPath cannot be cast to class java.lang.Integer (io.restassured.path.xml.XmlPath is in unnamed module of loader &apos;app&apos;; java.lang.Integer is in module java.base of loader &apos;bootstrap&apos;)
+	at request.RequestMethods.putProduct(RequestMethods.java:82)
+	at tests.ProductTest.validateRequest(ProductTest.java:33)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateRequest(GET, /products, &quot;content-type&quot;: &quot;application/json; charset=utf-8&quot;,
+&quot;Content-Encoding&quot;: &quot;gzip&quot;, NA, $...)">
+                  </a> <!-- validateRequest(GET, /products, "content-type": "application/json; charset=utf-8",
+"Content-Encoding": "gzip", NA, $...) -->
+                  <span class="method-name">validateRequest</span>
+                  <span class="parameters">(GET, /products, "content-type": "application/json; charset=utf-8",
+"Content-Encoding": "gzip", NA, $limit,3, 200.0, data[0].name="Duracell - AAA Batteries (4-Pack)",
+data[1].name="Duracell - AA 1.5V CopperTop Batteries (4-Pack)",
+data[2].name="Duracell - AA Batteries (8-Pack)")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [null] but found [ &quot;application/json; charset=utf-8&quot;]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at request.RequestMethods.validateHeaders(RequestMethods.java:29)
+	at request.RequestMethods.getProduct(RequestMethods.java:51)
+	at tests.ProductTest.validateRequest(ProductTest.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
+          </div> <!-- suite-Default_suite-class-failed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\NRABHA\AppData\Local\Temp\testng-eclipse--1547385280\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\NRABHA\AppData\Local\Temp\testng-eclipse--762946261\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -234,7 +462,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;tests.ProductTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;verifyGetRequest&quot;/&gt;
+          &lt;include name=&quot;validateRequest&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- tests.ProductTest --&gt;
     &lt;/classes&gt;
@@ -278,30 +506,30 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyGetRequest')
+data.setCell(0, 1, 'validateRequest')
 data.setCell(0, 2, 'tests.ProductTest')
-data.setCell(0, 3, 4);
+data.setCell(0, 3, 805);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyGetRequest')
+data.setCell(1, 1, 'validateRequest')
 data.setCell(1, 2, 'tests.ProductTest')
-data.setCell(1, 3, 1);
+data.setCell(1, 3, 49);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyGetRequest')
+data.setCell(2, 1, 'validateRequest')
 data.setCell(2, 2, 'tests.ProductTest')
-data.setCell(2, 3, 1);
+data.setCell(2, 3, 44);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyGetRequest')
+data.setCell(3, 1, 'validateRequest')
 data.setCell(3, 2, 'tests.ProductTest')
-data.setCell(3, 3, 1);
+data.setCell(3, 3, 17);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyGetRequest')
+data.setCell(4, 1, 'validateRequest')
 data.setCell(4, 2, 'tests.ProductTest')
-data.setCell(4, 3, 1);
+data.setCell(4, 3, 13);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 ms</span>
+              <span class="suite-total-time">Total running time: 928 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -334,30 +562,45 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">187 ms</span>
+                <span class="method-start">26 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">verifyGetRequest(Request Type, Request Uri, Request Headers, Request Body, Request Parameters, Expected Status Code, ...)</span>
-                <span class="method-start">655 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateRequest(GET, /products, "content-type": "application/json; charset=utf-8",
+"Content-Encoding": "gzip", NA, $...)</span>
+                <span class="method-start">41 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">verifyGetRequest(GET, /products, "content-type": "application/json; charset=utf-8", NA, $limit,1, 200.0, data[0].name...)</span>
-                <span class="method-start">662 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateRequest(POST, /products, "content-type": "application/json; charset=utf-8",
+"Content-Encoding": "gzip", {
+"n...)</span>
+                <span class="method-start">849 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">verifyGetRequest(POST, /products, "content-type": "application/json; charset=utf-8", {
-"name": "iphone",
-"type": "Sta...)</span>
-                <span class="method-start">664 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateRequest(PUT, /products, "content-type": "application/json; charset=utf-8",
+"Content-Encoding": "gzip", {
+"na...)</span>
+                <span class="method-start">900 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">verifyGetRequest(PATCH, /products, "content-type": "application/json; charset=utf-8", { "name": "iphone",
-"type": "St...)</span>
-                <span class="method-start">666 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateRequest(PATCH, /products, "content-type": "application/json; charset=utf-8",
+"Content-Encoding": "gzip", { "...)</span>
+                <span class="method-start">945 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">verifyGetRequest(DELETE, /products, "content-type": "application/json; charset=utf-8", NA, id,, 200400.0, NA)</span>
-                <span class="method-start">668 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateRequest(DELETE, /products, "content-type": "application/json; charset=utf-8",
+"Content-Encoding": "gzip", {
+...)</span>
+                <span class="method-start">965 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -10,6 +10,7 @@ public class ProductTest extends BaseTest {
 
 	ReadExcelData readExcelData = new ReadExcelData();
 	RequestMethods request = new RequestMethods();
+
 	@SuppressWarnings("static-access")
 	@DataProvider(name = "DataFromExcel")
 	public Object[][] dataForTest() {
@@ -17,39 +18,26 @@ public class ProductTest extends BaseTest {
 	}
 
 	@Test(dataProvider = "DataFromExcel")
-	public void verifyGetRequest(
-			String requestType,
-			String requestURI,
-			String requestHeaders,
-			String requestBody,
-			String requestParameters,
-			String expectedStatusCode,
-			String jsonPath) {
+	public void validateRequest(String requestType, String requestURI, String requestHeaders, String requestBody,
+			String requestParameters, String expectedStatusCode, String jsonPath) {
 		switch (requestType) {
 		case "GET":
-			request.getProduct(
-					requestURI,
-					requestHeaders,
-					requestParameters,
-					expectedStatusCode,
-					jsonPath
-					);
+			request.getProduct(requestURI, requestHeaders, requestParameters, expectedStatusCode, jsonPath);
 			break;
 
 		case "POST":
-			request.postProduct();
+			request.postProduct(requestURI, requestHeaders, requestBody, expectedStatusCode);
 			break;
+
+		case "PUT":
+			request.putProduct(requestURI, requestHeaders, requestBody, requestParameters, expectedStatusCode);
+			break;
+
 		case "PATCH":
-			request.patchProduct();
+			request.patchProduct(requestURI, requestHeaders, requestBody, requestParameters, expectedStatusCode);
 			break;
 		case "DELETE":
-			request.deleteProduct(
-					requestURI,
-					requestHeaders,
-					requestBody,
-					requestParameters,
-					expectedStatusCode
-					);
+			request.deleteProduct(requestURI, requestHeaders, requestBody, requestParameters, expectedStatusCode);
 			break;
 
 		default:
