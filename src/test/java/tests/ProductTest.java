@@ -32,7 +32,8 @@ public class ProductTest extends BaseTest {
 					requestHeaders,
 					requestParameters,
 					expectedStatusCode,
-					jsonPath);
+					jsonPath
+					);
 			break;
 
 		case "POST":
@@ -42,7 +43,13 @@ public class ProductTest extends BaseTest {
 			request.patchProduct();
 			break;
 		case "DELETE":
-			request.deleteProduct();
+			request.deleteProduct(
+					requestURI,
+					requestHeaders,
+					requestBody,
+					requestParameters,
+					expectedStatusCode
+					);
 			break;
 
 		default:
