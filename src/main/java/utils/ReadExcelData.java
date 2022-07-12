@@ -4,9 +4,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.DateUtil;
@@ -19,11 +16,11 @@ public class ReadExcelData {
 
 	public static FileInputStream file;
 	public static String[][] excelData;
+
 	public ReadExcelData() {
-//	public static void main(String[] args) {
 
 		try {
-			file = new FileInputStream(new File("./src/test/resources/TestData.xlsx"));
+			file = new FileInputStream(new File("./src/test/resources/TestData/TestData.xlsx"));
 			Workbook workbook = new XSSFWorkbook(file);
 			Sheet sheet = workbook.getSheetAt(0);
 
@@ -31,10 +28,13 @@ public class ReadExcelData {
 			int i = 0;
 			int rowNum = sheet.getLastRowNum();
 			int cellNum = sheet.getRow(0).getPhysicalNumberOfCells();
-			excelData = new String[rowNum][cellNum];
+			excelData = new String[rowNum - 1][cellNum];
 			// Reading the data in
 			for (Row row : sheet) {
 				int j = 0;
+				if (row.getRowNum() == 0) {
+					continue;
+				}
 				for (Cell cell : row) {
 					switch (cell.getCellType()) {
 					case STRING:
@@ -61,12 +61,7 @@ public class ReadExcelData {
 				}
 				i++;
 			}
-//			for (int k = 0; k < rowNum; k++) {
-//				for (int l = 0; l < cellNum; l++) {
-//					System.out.print(excelData[k][l] + "\t");
-//				}
-//				System.out.println("\n");
-//			}
+
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -75,19 +70,6 @@ public class ReadExcelData {
 			e.printStackTrace();
 		}
 
-//		// printing the data in tabular form
-//		for(int num:data.keySet()){
-//			List<String> temp = data.get(num);
-//			int count = 0;
-//			for (String st : temp) {
-//				System.out.print(st + "\t");
-//				count++;
-//				if (count == temp.size()) {
-//					System.out.println("");
-//				}
-//
-//			}
-//		}
 	}
 
 }

@@ -3,13 +3,13 @@ package tests;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import request.RequestMethods;
 import utils.ReadExcelData;
 
 public class ProductTest extends BaseTest {
 
 	ReadExcelData readExcelData = new ReadExcelData();
-	
-
+	RequestMethods request = new RequestMethods();
 	@SuppressWarnings("static-access")
 	@DataProvider(name = "DataFromExcel")
 	public Object[][] dataForTest() {
@@ -17,25 +17,32 @@ public class ProductTest extends BaseTest {
 	}
 
 	@Test(dataProvider = "DataFromExcel")
-	public void verifyGetRequest(String data1, String data2, String data3, String data4, String data5, String data6, String data7) {
-		System.out.println("-----");
-		System.out.println("datas");
-		System.out.println(data1);
-		System.out.println("-----");
-//		System.out.println("data2 : ");
-//		System.out.println(data2);
-//		System.out.println("-----");
-//		Assert.assertEquals(data1, "ab");
-//		Assert.assertEquals(data2, "cd");
-//		for(int i =1; i< data.size();i++) {
-//			System.out.println("Data" + i);
-//			System.out.println(data.get(i));
-//		}
+	public void verifyGetRequest(
+			String requestType,
+			String requestURI,
+			String requestHeaders,
+			String requestBody,
+			String requestParameters,
+			String expectedStatusCode,
+			String jsonPath) {
+		switch (requestType) {
+		case "GET":
+			request.getProduct(requestURI,requestHeaders, requestParameters,expectedStatusCode,jsonPath);
+			break;
 
-//		extentReport.createTestcase("Verify Get Product");
-//		Response response =  bestBuyRequestPlant.getAllProducts("/products", "", 0);
-//		extentReport.addLog(Status.INFO, response.asPrettyString());
-//		response.then().statusCode(200);
+		case "POST":
+			request.postProduct();
+			break;
+		case "PATCH":
+			request.patchProduct();
+			break;
+		case "DELETE":
+			request.deleteProduct();
+			break;
+
+		default:
+			break;
+		}
 
 	}
 
