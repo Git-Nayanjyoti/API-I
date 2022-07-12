@@ -7,12 +7,9 @@ import org.junit.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 
-import com.aventstack.extentreports.Status;
-
 import io.restassured.RestAssured;
 import request.RequestMethods;
 import utils.ConfigRead;
-import utils.ExtentReportUtils;
 
 public class BaseTest {
 	String configFilename;
