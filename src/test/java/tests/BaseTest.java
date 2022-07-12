@@ -14,7 +14,7 @@ import utils.ConfigRead;
 public class BaseTest {
 	String configFilename;
 	Properties configProperties;
-	RequestMethods bestBuyRequestFactory;
+	RequestMethods requestMethods;
 	String currentWorkingDirectory;
 	
 	@BeforeSuite
@@ -29,7 +29,7 @@ public class BaseTest {
 		RestAssured.baseURI = configProperties.getProperty("baseUrl");
 		RestAssured.port = Integer.parseInt(configProperties.getProperty("port"));
 		
-		bestBuyRequestFactory = new RequestMethods();
+		requestMethods = new RequestMethods();
 		
 	}
 	

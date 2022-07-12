@@ -27,7 +27,12 @@ public class ProductTest extends BaseTest {
 			String jsonPath) {
 		switch (requestType) {
 		case "GET":
-			request.getProduct(requestURI,requestHeaders, requestParameters,expectedStatusCode,jsonPath);
+			request.getProduct(
+					requestURI,
+					requestHeaders,
+					requestParameters,
+					expectedStatusCode,
+					jsonPath);
 			break;
 
 		case "POST":

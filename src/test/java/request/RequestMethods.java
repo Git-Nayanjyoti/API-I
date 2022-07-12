@@ -3,16 +3,23 @@ package request;
 import org.testng.Assert;
 
 import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
 public class RequestMethods {
 
 	public static Response response;
-	public static RequestSpecification responseSpecification = RestAssured.given();
+	public static RequestSpecification responseSpecification = RestAssured.given().contentType(ContentType.JSON);
 	public static String[] splitParameters;
 	public static String[] splitjsonPaths;
+	public static String headerValue;
+	public static String[] splitStatusCode;
+	public static String[] jsonValues;
+	public static String[] splitHeaders;
+	public static String[] headerValues;
 	public void getProduct(String uri, String headers, String parameters, String statusCode, String jsonPaths) {
+		splitHeaders = headers.split(",");
 		splitParameters = parameters.split(",");
 		splitjsonPaths = jsonPaths.split(",");
 		response = responseSpecification
@@ -24,11 +31,17 @@ public class RequestMethods {
 				.all()
 				.extract()
 				.response();
-		String headerValue = response.getHeader("Content-Type");
-		Assert.assertEquals("application/json; charset=utf-8", headerValue);
+		
+		for(String header: splitHeaders) {
+			headerValues = header.split(":");
+			headerValue = response.getHeader(headerValues[0]);
+			Assert.assertEquals(headerValues[1], headerValue);
+		}
+		
 		Assert.assertEquals(statusCode, response.statusCode());
 		for(String jsonpath : splitjsonPaths) {
-			Assert.assertEquals(response.jsonPath().getString(jsonpath),"Duracell - AAA Batteries (4-Pack)");
+			jsonValues = jsonpath.split("=");
+			Assert.assertEquals(response.jsonPath().getString(jsonpath),jsonValues[1]);
 		}
 	}
 
