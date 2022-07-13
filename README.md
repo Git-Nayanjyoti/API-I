@@ -1,7 +1,7 @@
 # API-I
 A test automation solution to accept request type (GET/PUT/POST/DELETE/PATCH), request URI, request headers, request body, request parameters, expected status code, Json Paths in an excel and verify if the endpoint behaves as expected (Status code match and json paths match). This solution must be able to process multiple rows that are present in an excel.
 
-API used - BestBuy API, Apache POI (can be found in the POM file)
+API used - BestBuy API, Apache POI (can be found in the POM file)<br>
 Excel Data - can be found on the test resources file 
 
 ## Install BestBuy API Playground
