@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-13T13:34:15 IST" name="Default suite" finished-at="2022-07-13T13:34:17 IST" duration-ms="2289">
+  <suite started-at="2022-07-13T13:58:36 IST" name="Default suite" finished-at="2022-07-13T13:58:38 IST" duration-ms="2517">
     <groups>
     </groups>
-    <test started-at="2022-07-13T13:34:15 IST" name="Default test" finished-at="2022-07-13T13:34:17 IST" duration-ms="2289">
+    <test started-at="2022-07-13T13:58:36 IST" name="Default test" finished-at="2022-07-13T13:58:38 IST" duration-ms="2517">
       <class name="tests.ProductTest">
-        <test-method is-config="true" signature="preSetup()[pri:0, instance:tests.ProductTest@3383649e]" started-at="2022-07-13T13:34:15 IST" name="preSetup" finished-at="2022-07-13T13:34:15 IST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="preSetup()[pri:0, instance:tests.ProductTest@3383649e]" started-at="2022-07-13T13:58:36 IST" name="preSetup" finished-at="2022-07-13T13:58:36 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ProductTest@3383649e]" started-at="2022-07-13T13:34:15 IST" name="setup" finished-at="2022-07-13T13:34:15 IST" duration-ms="454" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ProductTest@3383649e]" started-at="2022-07-13T13:58:36 IST" name="setup" finished-at="2022-07-13T13:58:36 IST" duration-ms="519" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validateRequest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.ProductTest@3383649e]" started-at="2022-07-13T13:34:15 IST" name="validateRequest" data-provider="DataFromExcel" finished-at="2022-07-13T13:34:17 IST" duration-ms="1493" status="PASS">
+        <test-method signature="validateRequest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.ProductTest@3383649e]" started-at="2022-07-13T13:58:36 IST" name="validateRequest" data-provider="DataFromExcel" finished-at="2022-07-13T13:58:38 IST" duration-ms="1729" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -58,7 +58,7 @@ data[2].name=Duracell - AA Batteries (8-Pack)]]>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateRequest -->
-        <test-method signature="validateRequest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.ProductTest@3383649e]" started-at="2022-07-13T13:34:17 IST" name="validateRequest" data-provider="DataFromExcel" finished-at="2022-07-13T13:34:17 IST" duration-ms="59" status="PASS">
+        <test-method signature="validateRequest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.ProductTest@3383649e]" started-at="2022-07-13T13:58:38 IST" name="validateRequest" data-provider="DataFromExcel" finished-at="2022-07-13T13:58:38 IST" duration-ms="58" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -110,7 +110,7 @@ data[2].name=Duracell - AA Batteries (8-Pack)]]>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateRequest -->
-        <test-method signature="validateRequest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.ProductTest@3383649e]" started-at="2022-07-13T13:34:17 IST" name="validateRequest" data-provider="DataFromExcel" finished-at="2022-07-13T13:34:17 IST" duration-ms="123" status="PASS">
+        <test-method signature="validateRequest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.ProductTest@3383649e]" started-at="2022-07-13T13:58:38 IST" name="validateRequest" data-provider="DataFromExcel" finished-at="2022-07-13T13:58:38 IST" duration-ms="70" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -162,7 +162,7 @@ data[2].name=Duracell - AA Batteries (8-Pack)]]>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateRequest -->
-        <test-method signature="validateRequest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.ProductTest@3383649e]" started-at="2022-07-13T13:34:17 IST" name="validateRequest" data-provider="DataFromExcel" finished-at="2022-07-13T13:34:17 IST" duration-ms="68" status="PASS">
+        <test-method signature="validateRequest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.ProductTest@3383649e]" started-at="2022-07-13T13:58:38 IST" name="validateRequest" data-provider="DataFromExcel" finished-at="2022-07-13T13:58:38 IST" duration-ms="59" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -213,7 +213,7 @@ data[2].name=Duracell - AA Batteries (8-Pack)]]>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateRequest -->
-        <test-method signature="validateRequest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.ProductTest@3383649e]" started-at="2022-07-13T13:34:17 IST" name="validateRequest" data-provider="DataFromExcel" finished-at="2022-07-13T13:34:17 IST" duration-ms="59" status="PASS">
+        <test-method signature="validateRequest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.ProductTest@3383649e]" started-at="2022-07-13T13:58:38 IST" name="validateRequest" data-provider="DataFromExcel" finished-at="2022-07-13T13:58:38 IST" duration-ms="55" status="PASS">
           <params>
             <param index="0">
               <value>

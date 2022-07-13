@@ -1,0 +1,52 @@
+﻿Request Type,Request Uri,Request Headers,Request Body,Request Parameters,Expected Status Code,Json Path
+GET,/products,content-type: application/json;  charset=utf-8,NA,"$limit,3",200,"data[0].name=Duracell - AAA Batteries (4-Pack),
+data[1].name=Duracell - AA 1.5V CopperTop Batteries (4-Pack),
+data[2].name=Duracell - AA Batteries (8-Pack)"
+POST,/products,content-type: application/json;  charset=utf-8,"{
+""name"": ""iphone"",
+""type"": ""Smart Phone"",
+""price"": 1000,
+""shipping"": 10,
+""upc"": ""string"",
+""description"": ""color white, ram 4 gb, processor A12 bionic"",
+""manufacturer"": ""Apple California"",
+""model"": ""iphone 11"",
+""url"": ""string"",
+""image"": ""string""
+}",NA,201,NA
+PUT,/products,content-type: application/json;  charset=utf-8,"{
+""name"": ""iphone"",
+""type"": ""Smart Phone"",
+""price"": 1000,
+""shipping"": 10,
+""upc"": ""string"",
+""description"": ""color white, ram 4 gb, processor A12 bionic"",
+""manufacturer"": ""Apple California"",
+""model"": ""iphone 11"",
+""url"": ""string"",
+""image"": ""string""
+}",id,200,NA
+PATCH,/products,content-type: application/json;  charset=utf-8,"{ ""name"": ""iphone"",
+""type"": ""Smart Phone"", 
+""price"": 1500,
+""shipping"": 15, 
+""upc"": ""string"", 
+""description"": ""color green, ram 8 gb, processor A15 bionic"", 
+""manufacturer"": ""Apple California"", 
+""model"": ""iphone 13"", 
+""url"": ""string"", 
+""image"": ""string"" 
+}",id,200,NA
+DELETE,/products,"content-type:application/json; charset=utf-8,Connection: keep-alive","{
+""name"": ""iphone"",
+""type"": ""Start Phone"",
+""price"": 1000,
+""shipping"": 10,
+""upc"": ""string"",
+""description"": ""color white, ram 4 gb, processor A12 bionic"",
+""manufacturer"": ""Apple California"",
+""model"": ""iphone 11"",
+""url"": ""string"",
+""image"": ""string""
+}",id,200,NA
+,,,,,,
