@@ -6,7 +6,7 @@
       <class name="tests.ProductTest">
         <methods>
           <include name="preSetup"/>
-          <include name="validateRequest" invocation-numbers="0 1 2 3 4"/>
+          <include name="validateRequest" invocation-numbers="1 3"/>
           <include name="setup"/>
         </methods>
       </class> <!-- tests.ProductTest -->
