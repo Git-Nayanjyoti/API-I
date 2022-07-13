@@ -7,8 +7,10 @@ Excel Data - can be found on the test resources file
 ## Install BestBuy API Playground
 ```raml
 Note: Make sure you have NodeJS installed (we require version 4 or newer). 
+
 ```
 ```raml
+-Open your Terminal/cmd/power-shell and run the commands
 git clone https://github.com/bestbuy/api-playground/
 cd api-playground
 npm install
